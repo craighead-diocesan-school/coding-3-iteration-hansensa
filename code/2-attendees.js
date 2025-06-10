@@ -18,8 +18,18 @@ function attendees() {
 }
 
 function make2() {
+  let count = 0
   let numToAdd = prompt('How many numbers do you want to add together?')
-  
+  numToAdd = Number(numToAdd)
+  let numbers = ''
+
+  while (count < numToAdd){
+    let number = prompt('Enter a number')
+    numbers = numbers + number + ', '
+    count = count + number
+  }
+
+  alert('= ' + numbers)
   // copy and paste your code here when you get to the Make step
   
 }
